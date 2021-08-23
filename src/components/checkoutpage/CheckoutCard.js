@@ -10,6 +10,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import accounting from "accounting";
 import { useStateValue } from "../../StateProvider"
 import { actionTypes } from "../../reducer";
+import ItemDetail from '../itemdetail/ItemDetail';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -83,6 +84,7 @@ export default function CheckoutCard({product : {id, name, productType, image, p
             <DeleteIcon fontSize="large" onClick={removeItem}/>
         </IconButton>
       </CardActions>
+      <ItemDetail />
     </Card>
   );
 }
