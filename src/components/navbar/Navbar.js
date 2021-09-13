@@ -60,10 +60,13 @@ export default function Navbar() {
             Hello Guest!
           </Typography>
 
+          <Link to="/signin">
           <div className={classes.button}>
             <Button variant="contained">
             <strong>Sign In</strong>
             </Button>
+            </div>
+          </Link>
 
             <Link to="checkout-page">
             <IconButton aria-label="show cart items" color="inherit">
@@ -73,7 +76,7 @@ export default function Navbar() {
             </IconButton>
             </Link>
 
-          </div>
+          
 
         </Toolbar>
 
